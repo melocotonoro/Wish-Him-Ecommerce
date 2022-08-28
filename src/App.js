@@ -1,5 +1,8 @@
 
 import './App.css';
+import NavBar from './component/navBar/NavBar';
+
+
 
 function App() {
 let imagen="lentes_Vulk.jpg"
@@ -10,10 +13,11 @@ medidas: "Medidas: Calibre: 56mm Puente: 19mm Patilla: 140mm"
 } 
   return (
     <div>
-      <div className="App">
+<NavBar/>
+      <div className="app">
         <img className="lentes" alt='lentes'src={imagen}/>
       </div>
-      <div className='App'>
+      <div className="textCard">
         <h1>Lentes de sol</h1>
         <b>{descripcion.modelo}</b>
         <p>{descripcion.color}</p>

@@ -1,10 +1,19 @@
-.App {
+body{
+padding: 0;
+margin: 0;
+}
+
+.app {
 text-align: center;
 height: 20rem;
-
 }
 .lentes{
 height: 20rem;
+margin: 8.875rem;
+}
 
+.textCard{
+text-align: center;
+margin-top: 8.875rem;
 }
 
