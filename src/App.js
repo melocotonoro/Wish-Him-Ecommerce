@@ -1,5 +1,6 @@
 
 import './App.css';
+import ItemListContainer from './component/ItemListContainer/ItemListContainer';
 import NavBar from './component/navBar/NavBar';
 
 
@@ -12,8 +13,9 @@ color:"Negro",
 medidas: "Medidas: Calibre: 56mm Puente: 19mm Patilla: 140mm"
 } 
   return (
-    <div>
+    <div className='container'>
 <NavBar/>
+<ItemListContainer greeting="Bienvenidos a Whish Him" texto="E-commerce de regalos para ellos" />
       <div className="app">
         <img className="lentes" alt='lentes'src={imagen}/>
       </div>

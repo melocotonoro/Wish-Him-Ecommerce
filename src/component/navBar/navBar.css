@@ -1,11 +1,20 @@
-.containerNV{
-display: flex;
+.navBar{
 background-color: #4A594F;
 height:5.75rem;
 width:100%;
 position: fixed;
 font-family: 'Roboto Mono', monospace;
+z-index: 3;
+margin: 0 auto;
 }
+
+.containerNV{
+display: flex;
+justify-content:space-between;
+
+}
+
+
 
 .lg{
 padding:0.3rem;
@@ -16,11 +25,12 @@ padding-left: 1rem;
 }
 
 .itemsNv{
+width: 60%;
 display: flex;
 flex-direction: row;
 list-style-type: none;
-margin-left: auto;
-margin-right: auto;
+align-items: center;
+justify-content:space-evenly;
 }
 
 .itemsNv li {  
