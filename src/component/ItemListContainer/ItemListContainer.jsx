@@ -1,17 +1,12 @@
 import React from "react";
+import ItemCount from "../ItemCount/ItemCount";
 import './ItemListContainer.css'
 
-function ItemListContainer(props){
+function ItemListContainer(){
     return(
-    <main className="main">
-        <div>
-            <h1 className="mainTxt">{props.greeting}</h1>
-            <h2 className="mainTxt1">{props.texto}</h2>
-        </div>
-        <div className="mainBg">
-        <img src="./mainBackground2.png"></img>
-        </div>
-    </main>
+<div>
+  <ItemCount stock={20} inicial={1} onAdd={0}/>
+</div>
     )
 }
 
