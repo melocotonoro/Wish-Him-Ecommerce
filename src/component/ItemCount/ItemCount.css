@@ -1,5 +1,4 @@
 .containerBt{
-margin-top: 5rem;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -15,14 +14,11 @@ padding-left: 1.5rem;
 padding-right: 1.5rem;
 }
 
-.stock{
-margin-left:46%;
-margin-right:46%;
-}
+/*.stock{
+
+}*/
 
 .btnAdd{
-margin-top: 1rem;
-margin-left:47%;
 height:2rem;
 width:5rem ;
 }
