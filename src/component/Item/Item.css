@@ -1,10 +1,12 @@
 .card{
 width: 18rem;
-margin: 5rem 0.25rem;
+margin: 2rem 0.25rem;
 border-radius: 0.5rem;
 box-shadow: 1rem 1rem 2rem #bebebe,
 -1rem -1rem 2rem #ffffff;
 overflow: hidden;
 text-align: center;
 font-family: 'Roboto Mono', monospace;
+padding: 2rem;
+object-fit: cover;
 }
