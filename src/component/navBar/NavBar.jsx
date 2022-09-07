@@ -4,6 +4,7 @@ import CartWidget from "../CartWidget/CartWidget ";
 import './navBar.css'
 
 function NavBar(){
+
 let logo= "logo.png"
 const section = ["Home","Categories","Contact","Search"];
 
@@ -19,7 +20,8 @@ return (
             </ul>
         <CartWidget/>
         </div>
-    </section>   )
+    </section>
+)
 }
 
 export default NavBar

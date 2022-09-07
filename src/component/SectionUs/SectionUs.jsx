@@ -3,6 +3,7 @@ import React from "react";
 import './SectionUs.css'
 
 export default function SectionUs(props){
+
 return(
     <div className="presentation">
     <div>

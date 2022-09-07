@@ -2,39 +2,34 @@ import React from "react"
 import { useState } from "react"
 import './ItemCount.css'
 
-const ItemCount=({stock, inicial,onAdd})=>{
+const ItemCount=({stock, inicial,addItem})=>{
 
 const[vInicial, setVInicial]=useState(inicial)
 const[cantStock, setCantStock]=useState(stock)
-const[add,setAdd]=useState(onAdd)
+const[add,setAdd]=useState(addItem)
 
 const plus=()=>{
-if (vInicial<=cantStock){
-    setVInicial(vInicial+1)
-}
+    if (vInicial<cantStock){setVInicial(vInicial+1)}
 }
 
 const substract=()=>{
-if (vInicial>0){
-    setVInicial(vInicial-1)
-} 
+    if (vInicial>0){setVInicial(vInicial-1)} 
 }
 
-const itemsAdd=()=>{
-  if(vInicial<=cantStock){
-    setCantStock(cantStock - vInicial) 
-    setAdd(add+vInicial)
-  }
-
+const onAdd=()=>{
+    if(vInicial<=cantStock){
+        setCantStock(cantStock - vInicial) 
+        setAdd(add+vInicial)
+}
 }
 return(
     <div>
         <div className="containerBt">
-            <button onClick={()=>{plus()}}>+</button>
+            <button onClick={()=>{substract()}}>-</button>
             <span>{vInicial}</span>
-            <button onClick={()=>{substract()}} >-</button>
+            <button onClick={()=>{plus()}} >+</button>
         </div>
-            <button onClick={()=>{itemsAdd()}} className="btnAdd">Agregar</button>
+            <button onClick={()=>{onAdd()}} className="btnAdd">Agregar</button>
             <p className="stock">Quedan {cantStock} unidades</p>
             <p className="stock">Cantidad de productos seleccionados {add} </p>
     </div>
