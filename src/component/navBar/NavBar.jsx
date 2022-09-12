@@ -18,6 +18,8 @@ return (
             <ul className="itemsNv">
                 {section.map((el) =><a href="#" key={el.toString()}><li>{el}</li></a> )}
             </ul>
+        
+        {/* Componente icono carrito*/}
         <CartWidget/>
         </div>
     </section>

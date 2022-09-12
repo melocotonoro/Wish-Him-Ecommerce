@@ -10,9 +10,16 @@ function App() {
 
 return (
     <div className='container'>
+      {/* Componente NavBar*/}
       <NavBar/>
+      
+      {/* Componente principal de bienvenida*/}
       <SectionUs  greeting="Bienvenidos a Whish Him" texto="E-commerce de regalos para ellos" />
+      
+      {/* Componente contenedor de listas de cards*/}
       <ItemListContainer />
+
+      {/* Componente contenedor de detalle del producto*/}
       <ItemDetailContainer/>
     </div>
 );

@@ -25,6 +25,8 @@ const getData = new Promise((resolve) => {
 
 return(
     <div className="container">
+
+      {/* Componente contenedor de cards de productos*/}
       <ItemList info={info}/>
     </div>
 )

@@ -11,6 +11,8 @@ return(
             <h4><b>{title}</b></h4>
             <h5>{description}</h5>
             <p>${price}</p>
+            
+            {/* Componente botón agregar/quitar productos de stock */}
             <ItemCount stock={stock} inicial={1} addItem={0}/> 
         </div>
     </div>

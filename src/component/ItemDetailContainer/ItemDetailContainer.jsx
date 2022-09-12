@@ -19,12 +19,12 @@ const prom= new Promise(resolve =>{
 //Busca un solo objeto del array de productos
 const uniqueProd= dataCrd.find(el=> el.id === 1)
 
-    setTimeout(() => {
-        resolve(uniqueProd)
+setTimeout(() => {
+    resolve(uniqueProd)
 }, 2000);
 });
 
-    prom.then(el => setDetail(el)
+prom.then(el => setDetail(el)
     ).catch(()=>{
     console.log("Se ha producido un error")
 })
@@ -32,6 +32,7 @@ const uniqueProd= dataCrd.find(el=> el.id === 1)
 
 return(
     <div>
+        {/* Componente card de productos con descripcion*/}
         <ItemDetail detail={detail}/>
     </div>
 )

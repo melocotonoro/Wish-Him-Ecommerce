@@ -7,7 +7,6 @@ const ItemDetail= ({detail})=>{
 
 return(
 <div>
-    
     <div className='containerDetail'>
         <div>
             <img src={pictureUrl} alt={title}></img>
@@ -18,6 +17,8 @@ return(
             <h2 className='titleDetail'>{title}</h2>
         </div>
             <h4>{description}</h4>
+
+            {/* Componente botón agregar/quitar productos de stock */}
             <ItemCount stock={7} inicial={1} addItem={0}/> {/*Aca no me toma el valor de stock*/}
         </div>
     </div>
