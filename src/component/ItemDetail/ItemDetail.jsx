@@ -3,14 +3,16 @@ import ItemCount from '../ItemCount/ItemCount'
 import './ItemDetail.css'
 
 const ItemDetail= ({detail})=>{
-    const{title,pictureUrl,price,description}=detail
+
+const{title,description,pictureUrl,price}=detail
+
 
 return(
 <div>
     <div className='containerDetail'>
         <div>
             <img src={pictureUrl} alt={title}></img>
-            <h3>${price}.00</h3>
+            <h3>{"Precio $"+price}</h3>
         </div>
         <div>
         <div>

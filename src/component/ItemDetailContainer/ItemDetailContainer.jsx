@@ -14,7 +14,7 @@ useEffect(() => {
         {id:4,title:"Remera urbana",description:"Remera urbana marca Marko",pictureUrl:"https://imagizer.imageshack.com/img923/8982/NE5i9h.jpg",price:2500, stock:90}
 ];
 
-const prom= new Promise(resolve =>{
+const getItem= new Promise(resolve =>{
 
 //Busca un solo objeto del array de productos
 const uniqueProd= dataCrd.find(el=> el.id === 1)
@@ -24,7 +24,9 @@ setTimeout(() => {
 }, 2000);
 });
 
-prom.then(el => setDetail(el)
+getItem.then(el => {
+    setDetail(el)
+}
     ).catch(()=>{
     console.log("Se ha producido un error")
 })
