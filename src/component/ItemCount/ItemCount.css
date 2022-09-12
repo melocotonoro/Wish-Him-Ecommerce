@@ -1,3 +1,10 @@
+.contStock{
+display: flex;
+align-items: center;
+justify-content: center;   
+flex-direction: column;
+}
+
 .containerBt{
 display: flex;
 align-items: center;
@@ -19,6 +26,18 @@ padding-right: 1.5rem;
 }*/
 
 .btnAdd{
-height:2rem;
-width:5rem ;
+height:2.5rem;
+width:7rem ;
+display: inline-block;
+border-radius: 4px;
+background-color: #4A594F;
+color: aliceblue;
+border: none;
+text-align: center;
+font-size: 1rem;
+padding: .7rem;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
 }
+

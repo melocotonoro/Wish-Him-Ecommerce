@@ -7,7 +7,7 @@ const ItemList = ({info}) => {
         <div className="containerCard">
             {info.map(item => (
                 <div key={item.id} className="col-md-4 py-3">
-                    <Item title={item.title} pictureUrl={item.pictureUrl} price={item.price} description={item.description}/>
+                    <Item title={item.title} pictureUrl={item.pictureUrl} price={item.price} description={item.description} stock={item.stock}/>
                 </div>)
             )}
         </div>

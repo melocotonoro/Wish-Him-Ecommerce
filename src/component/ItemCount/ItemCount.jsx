@@ -23,7 +23,7 @@ const onAdd=()=>{
 }
 }
 return(
-    <div>
+    <div className="contStock">
         <div className="containerBt">
             <button onClick={()=>{substract()}}>-</button>
             <span>{vInicial}</span>
@@ -32,6 +32,7 @@ return(
             <button onClick={()=>{onAdd()}} className="btnAdd">Agregar</button>
             <p className="stock">Quedan {cantStock} unidades</p>
             <p className="stock">Cantidad de productos seleccionados {add} </p>
+            
     </div>
 )
 }

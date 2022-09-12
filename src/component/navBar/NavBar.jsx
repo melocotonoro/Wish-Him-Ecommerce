@@ -16,7 +16,7 @@ return (
                 <h4>WISH HIM</h4>
             </div>
             <ul className="itemsNv">
-                {section.map((el) =><a href="#"><li key={el.toString()}>{el}</li></a> )}
+                {section.map((el) =><a href="#" key={el.toString()}><li>{el}</li></a> )}
             </ul>
         <CartWidget/>
         </div>
