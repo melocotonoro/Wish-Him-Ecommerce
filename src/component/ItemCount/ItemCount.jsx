@@ -5,11 +5,10 @@ import './ItemCount.css'
 const ItemCount=({stock, inicial,addItem})=>{
 
 const[vInicial, setVInicial]=useState(inicial)
-const[cantStock, setCantStock]=useState(stock)
 const[add,setAdd]=useState(addItem)
 
 const plus=()=>{
-    if (vInicial<cantStock){setVInicial(vInicial+1)}
+    if (vInicial<stock){setVInicial(vInicial+1)}
 }
 
 const substract=()=>{
@@ -17,8 +16,8 @@ const substract=()=>{
 }
 
 const onAdd=()=>{
-    if(vInicial<=cantStock){
-        setCantStock(cantStock - vInicial) 
+    if(vInicial<=stock){
+        stock-=vInicial
         setAdd(add+vInicial)
 }
 }
@@ -30,7 +29,7 @@ return(
             <button onClick={()=>{plus()}} >+</button>
         </div>
             <button onClick={()=>{onAdd()}} className="btnAdd">Agregar</button>
-            <p className="stock">Quedan {cantStock} unidades</p>
+            <p className="stock">Quedan {stock} unidades</p>
             <p className="stock">Cantidad de productos seleccionados {add} </p>
             
     </div>
