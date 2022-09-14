@@ -1,8 +1,10 @@
 import React from "react"
-import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom"
+import Buttons from "../Buttons/Buttons"
+
 import './Item.css'
 
-const Item=({title,pictureUrl,price,description,stock})=>{
+const Item=({id,title,pictureUrl,price,description,stock})=>{
 
 return(
     <div className="card">
@@ -11,8 +13,12 @@ return(
             <h4><b>{title}</b></h4>
             <h5>{description}</h5>
             <p>${price}</p>
+            
+            <Link to='/item/id'>
             {/*Componente botón agregar/quitar productos de stock*/}
-            <ItemCount stock={stock} inicial={1} addItem={0}/> 
+                <Buttons data="Ver Detalles"/>
+            </Link>
+            
         </div>
     </div>
 )

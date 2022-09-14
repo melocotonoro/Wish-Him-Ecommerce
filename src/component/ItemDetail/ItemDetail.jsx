@@ -2,25 +2,24 @@ import React from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import './ItemDetail.css'
 
-const ItemDetail= ({detail})=>{
-
+const ItemDetail=({detail})=>{
 
 return(
     <div>
         <div className='containerDetail'>
             <div>
-                <img src={detail.pictureUrl} alt={detail.title}></img>
-                <h3>{"Precio $"+detail.price}</h3>
-            </div>
+                <img src={detail.pictureUrl} alt="detalles productos" />
+                    <h3>{detail.precio}</h3>
+        </div>    
             <div>
-                <div>
+                <div>   
                     <h2 className='titleDetail'>{detail.title}</h2>
-                </div>
+                </div> 
                 <h4>{detail.description}</h4>
                 {/* Componente botón agregar/quitar productos de stock */}
-                <ItemCount stock={detail.stock} inicial={1} addItem={0}/> {/*Aca no me toma el valor de stock*/}
-            </div>
-        </div>
+                <ItemCount stock={detail.stock} inicial={1} addItem={0}/>
+            </div>    
+        </div>    
     </div>
 )
 }

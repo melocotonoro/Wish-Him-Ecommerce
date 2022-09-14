@@ -1,27 +1,37 @@
 
 import './App.css';
 import NavBar from './component/navBar/NavBar';
-import ItemListContainer from './component/ItemListContainer/ItemListContainer';
-import SectionUs from './component/SectionUs/SectionUs';
 import ItemDetailContainer from './component/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import CartWidget from './component/CartWidget/CartWidget ';
+import Main from './component/Main/Main';
+import ItemListContainer from './component/ItemListContainer/ItemListContainer';
 
 
 function App() {
 
 return (
+  <BrowserRouter>
     <div className='container'>
       {/* Componente NavBar*/}
-      <NavBar/>
-      
-      {/* Componente principal de bienvenida*/}
-      <SectionUs  greeting="Bienvenidos a Whish Him" texto="E-commerce de regalos para ellos" />
-      
-      {/* Componente contenedor de listas de cards*/}
-      <ItemListContainer />
+        <NavBar/>
 
-      {/* Componente contenedor de detalle del producto*/}
-      <ItemDetailContainer/>
+        <Routes>
+
+          {/* Componente contenedor  de ItemListContainer, SectionUs y Category*/}
+          <Route exact path='/' element={<Main/>}/>
+          {/* Componente contenedor  de ItemListContainer, SectionUs y Category*/}
+          <Route exact path='/category/:id' element={<ItemListContainer/>}/>
+
+          {/* Componente contenedor de detalle del producto*/}
+          <Route exact path='/item/:id' element={<ItemDetailContainer/>}/>
+
+          <Route exact path='/cart' element={<CartWidget/>}/>
+          </Routes>  
     </div>
+  
+  </BrowserRouter>
+
 );
 }
 

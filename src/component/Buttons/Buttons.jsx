@@ -1,13 +1,12 @@
 import React from 'react'
-import './Butons.css'
+import './Buttons.css'
 
-const Butons= ({data})=>{
-
+const Buttons= ({data})=>{
 return(
     <button className='btns'>
-        <span data={data}/>
+        <span>{data}</span>
     </button>
 )
 }
 
-export default Butons
+export default Buttons
