@@ -3,7 +3,6 @@ import ItemCount from '../ItemCount/ItemCount'
 import './ItemDetail.css'
 
 const ItemDetail=({detail})=>{
-
 return(
     <div>
         <div className='containerDetail'>

@@ -9,7 +9,7 @@ const ItemList = ({info}) => {
                 <div key={item.id}>
 
                     {/* Componente card de producto*/}
-                    <Item title={item.title} pictureUrl={item.pictureUrl} price={item.price} description={item.description} stock={item.stock}/>
+                    <Item title={item.title} pictureUrl={item.pictureUrl} price={item.price} description={item.description} stock={item.stock} id={item.id}/>
                 </div>)
             )}
         </div>

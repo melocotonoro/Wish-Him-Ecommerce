@@ -26,11 +26,13 @@ setTimeout(() => {
 }, 2000);
 });
 
-    getItem.then(el=>setDetail(el.find(prod=>prod.id===id))
+getItem.then(el => setDetail(el.find(prod=>prod.id === id)))
 
-).catch(()=>{
+
+.catch(()=>{
     console.log("Se ha producido un error")
 })
+
 },[id]);
 
 return(

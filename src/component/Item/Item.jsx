@@ -14,7 +14,7 @@ return(
             <h5>{description}</h5>
             <p>${price}</p>
             
-            <Link to='/item/id'>
+            <Link to={`/item/${id}`}>
             {/*Componente botón agregar/quitar productos de stock*/}
                 <Buttons data="Ver Detalles"/>
             </Link>
