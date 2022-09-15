@@ -1,3 +1,26 @@
+# Tírulo: Wish-Him E-commerce de productos para él 
+
+Wish-Him, es un página web desarrollada con el fin de crear un espacio de E-commerce dónde 
+se podrá encontrar regalos para el género masculino.
+
+En la página principal se podrá visualizar una sección que habla de nosotros (componente "SectionUs"), pero
+principalmente se muestra todos los productos disponibles (componente "ItemListContainer").
+
+Estos dos componentes mencionados estan contenidos en el componente "Main", que es el que esta "ruteado" en la interfaz principal ("/")
+
+El componente "ItemListContainer" es donde se realiza "el llamado" para recibir un array de objetos que contiene los productos a mostrar y es el que aglomera al componente "ItemList", mismo que se encarga de generar el contexto donde se encontrará el componente "Item" (representado en la interfaz como los elementos "cards" de productos).
+
+En el componente NavBar, podemos encontrar  a la sección Principal, que "linkea" a la página principal, "Ropa" y "Accesorios" que son las categorías de los productos (al linkear sobre cada sección nos muestra los productos por cada categoría)
+
+
+
+
+Cada "card" de productos tiene un  componente tipo botón "Buttons" con la descripción "Ver Detalles",que nos muestra de forma dinámica al componente  
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
