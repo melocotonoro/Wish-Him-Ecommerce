@@ -12,10 +12,12 @@ El componente "ItemListContainer" es donde se realiza "el llamado" para recibir 
 
 En el componente NavBar, podemos encontrar  a la sección Principal, que "linkea" a la página principal, "Ropa" y "Accesorios" que son las categorías de los productos (al linkear sobre cada sección nos muestra los productos por cada categoría)
 
+En el componente "ItemDetailContainer" se hace el "llamado" del array de productos y filtra uno de los objetos de los productos que se visualizará en el DOM através del componente "ItemDetail".
 
 
+Cada "card" de productos tiene un  componente tipo botón "Buttons" con la descripción -Ver Detalles-,que nos muestra de forma dinámica al componente  "ItemDetail", con descripcion, precio,fotografía y con el componente "ItemCount" que nos permitirá agregar al carrito (componente "CarWidget") el producto y la cantidad desea.
 
-Cada "card" de productos tiene un  componente tipo botón "Buttons" con la descripción "Ver Detalles",que nos muestra de forma dinámica al componente  
+
 
 
 
