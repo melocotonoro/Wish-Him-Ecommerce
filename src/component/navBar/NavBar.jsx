@@ -6,7 +6,14 @@ import './navBar.css'
 function NavBar(){
 
 let logo= "logo.png"
-// const section = ["Principal","Ropa","Accesorios","Search"];
+
+//Array con rutas para usar en los elementos del NavBar
+const section = [{name:"Principal", root:"./"},
+{name:"Ropa", root:"./category/ropa"},
+{name:"Accesorios", root:"./category/accesorios"},
+{name:"Search", root:"./"}];
+
+
 
 return (            
     <section className="navBar">
@@ -16,11 +23,7 @@ return (
                 <h4>WISH HIM</h4>
             </div>
             <ul className="itemsNv">
-                <li key={1}><NavLink to={"./"} className="items">Principal</NavLink></li>
-                <li key={2}><NavLink to={"./category/ropa"} className="items">Ropa</NavLink></li>
-                <li key={3}><NavLink to={"./category/accesorios"} className="items">Accesorios</NavLink></li>
-                <li key={4}><NavLink to={"./"} className="items">Search</NavLink></li>
-                {/* {section.map((el) =><Link to={"/"} key={el.toString()}><li>{el}</li></Link> )} */}
+                {section.map((el) =><NavLink to={el.root} key={el.toString()} className="items"><li>{el.name}</li></NavLink> )}
             </ul>
             {/* Componente icono carrito*/}
             <CartWidget/>
@@ -30,3 +33,4 @@ return (
 }
 
 export default NavBar
+

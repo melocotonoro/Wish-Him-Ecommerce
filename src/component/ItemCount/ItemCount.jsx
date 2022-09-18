@@ -17,10 +17,8 @@ const substract=()=>{
 
 const onAdd=()=>{
     if(vInicial<=stock){
-        const sum= stock-vInicial
-        if (sum<stock){
-            setAdd(add+vInicial)
-        }
+        stock-=vInicial
+        setAdd(add+vInicial)
 }
 }
 return(
