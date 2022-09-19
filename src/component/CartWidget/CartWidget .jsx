@@ -6,7 +6,7 @@ import './cartWidget.css'
 function CartWidget(){
     return(
         <div className="containerCart">
-            <Link to='/card'>
+            <Link to='/cart'>
                 <img className="shopCart" src='./shoppingCart-01.png' alt="carrito compras" />
             </Link>
         </div>

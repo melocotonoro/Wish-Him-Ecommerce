@@ -1,0 +1,13 @@
+.cartContainer{
+position: absolute;
+width: 90%;
+text-align: center;
+margin: 10rem auto;
+border-radius: 0.5rem;
+box-shadow: 1rem 1rem 2rem #bebebe,
+-1rem -1rem 2rem #ffffff;
+overflow: hidden;
+font-family: 'Roboto Mono', monospace;
+padding-bottom: 3rem;
+}
+

@@ -9,9 +9,9 @@ let logo= "logo.png"
 
 //Array con rutas para usar en los elementos del NavBar
 const section = [{name:"Principal", root:"./"},
-{name:"Ropa", root:"./category/ropa"},
-{name:"Accesorios", root:"./category/accesorios"},
-{name:"Search", root:"./"}];
+{id:"6",name:"Ropa", root:"./category/ropa"},
+{id:"7",name:"Accesorios", root:"./category/accesorios"},
+{id:"8",name:"Search", root:"./"}];
 
 
 
@@ -23,7 +23,7 @@ return (
                 <h4>WISH HIM</h4>
             </div>
             <ul className="itemsNv">
-                {section.map((el) =><NavLink to={el.root} key={el.toString()} className="items"><li>{el.name}</li></NavLink> )}
+                {section.map((el) =><NavLink to={el.root} key={el.name} className="items"><li>{el.name}</li></NavLink> )}
             </ul>
             {/* Componente icono carrito*/}
             <CartWidget/>

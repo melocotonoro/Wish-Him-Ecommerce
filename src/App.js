@@ -3,9 +3,9 @@ import './App.css';
 import NavBar from './component/navBar/NavBar';
 import ItemDetailContainer from './component/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import CartWidget from './component/CartWidget/CartWidget ';
 import Main from './component/Main/Main';
 import ItemListContainer from './component/ItemListContainer/ItemListContainer';
+import Cart from './component/Cart/Cart';
 
 
 function App() {
@@ -26,7 +26,7 @@ return (
           {/* Componente contenedor de detalle del producto*/}
           <Route exact path='/item/:id' element={<ItemDetailContainer/>}/>
 
-          <Route exact path='/cart' element={<CartWidget/>}/>
+          <Route exact path='/cart' element={<Cart/>}/>
           </Routes>  
     </div>
   

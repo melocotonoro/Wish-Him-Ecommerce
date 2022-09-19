@@ -1,8 +1,17 @@
 import React from 'react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import Buttons from '../Buttons/Buttons'
 import ItemCount from '../ItemCount/ItemCount'
 import './ItemDetail.css'
 
 const ItemDetail=({detail})=>{
+ 
+const [addCart,setaddCart]=useState(false)
+
+const onAdd = (amount) => {
+    setaddCart(true);
+}
 return(
     <div>
         <div className='containerDetail'>
@@ -16,7 +25,12 @@ return(
                 </div> 
                 <h4>{detail.description}</h4>
                 {/* Componente botón agregar/quitar productos de stock */}
-                <ItemCount stock={detail.stock} inicial={1} addItem={0}/>
+                {
+                addCart
+                ? <Link to='/cart'><Buttons data={"Finalizar compra"}></Buttons></Link>
+                : <ItemCount stock={30} inicial={1} onAdd={onAdd}/>
+                }
+                
             </div>    
         </div>    
     </div>
