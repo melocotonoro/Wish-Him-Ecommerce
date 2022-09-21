@@ -6,32 +6,35 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Main from './component/Main/Main';
 import ItemListContainer from './component/ItemListContainer/ItemListContainer';
 import Cart from './component/Cart/Cart';
+import Context from './component/CartContext/CartContex';
 
 
 function App() {
 
 return (
-  <BrowserRouter>
-    <div className='container'>
-      {/* Componente NavBar*/}
-        <NavBar/>
 
-        <Routes>
+ <Context>
+    <BrowserRouter>
+      <div className='container'>
+        {/* Componente NavBar*/}
+          <NavBar/>
 
-          {/* Componente contenedor  de ItemListContainer, SectionUs y Category*/}
-          <Route exact path='/' element={<Main/>}/>
-          {/* Componente contenedor  de ItemListContainer, SectionUs y Category*/}
-          <Route exact path='/category/:id' element={<ItemListContainer/>}/>
+          <Routes>
 
-          {/* Componente contenedor de detalle del producto*/}
-          <Route exact path='/item/:id' element={<ItemDetailContainer/>}/>
+            {/* Componente contenedor  de ItemListContainer, SectionUs y Category*/}
+            <Route exact path='/' element={<Main/>}/>
+            {/* Componente contenedor  de ItemListContainer, SectionUs y Category*/}
+            <Route exact path='/category/:id' element={<ItemListContainer/>}/>
 
-          <Route exact path='/cart' element={<Cart/>}/>
-          </Routes>  
-    </div>
-  
-  </BrowserRouter>
+            {/* Componente contenedor de detalle del producto*/}
+            <Route exact path='/item/:id' element={<ItemDetailContainer/>}/>
 
+            <Route exact path='/cart' element={<Cart/>}/>
+            </Routes>  
+      </div>
+    
+    </BrowserRouter>
+  </Context>
 );
 }
 

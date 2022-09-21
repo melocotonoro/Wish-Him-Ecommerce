@@ -36,12 +36,12 @@ getItem.then(el => setDetail(el.find(prod=>prod.id === id)))
 },[id]);
 
 return(
+    
     <div className='detailContainer'>
         {/* Componente card de productos con descripcion*/}
         <ItemDetail detail={detail}/>
     </div>
 )
-
 }
 
 export default ItemDetailContainer

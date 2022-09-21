@@ -9,9 +9,9 @@ let logo= "logo.png"
 
 //Array con rutas para usar en los elementos del NavBar
 const section = [{name:"Principal", root:"./"},
-{id:"6",name:"Ropa", root:"./category/ropa"},
-{id:"7",name:"Accesorios", root:"./category/accesorios"},
-{id:"8",name:"Search", root:"./"}];
+{name:"Ropa", root:"./category/ropa"},
+{name:"Accesorios", root:"./category/accesorios"},
+{name:"Search", root:"./"}];
 
 
 
@@ -19,7 +19,10 @@ return (
     <section className="navBar">
         <div className="containerNV">
             <div className="lg">
+                <NavLink to={"/"}>
                 <img src={logo} alt="logo" className="logo"></img>
+                </NavLink>
+                
                 <h4>WISH HIM</h4>
             </div>
             <ul className="itemsNv">
