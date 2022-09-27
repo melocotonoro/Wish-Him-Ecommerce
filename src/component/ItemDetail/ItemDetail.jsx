@@ -9,18 +9,15 @@ import './ItemDetail.css'
 
 const ItemDetail=({detail})=>{
 
-const [addCart,setaddCart]=useState(false)
+    const [addCart,setaddCart]=useState(false)
 
-const{addItem}=useContext(CartContext);
-
-
-const onAdd=(amount) => {
-    setaddCart(true);
-    addItem(detail,amount)
-}
+    const{addItem}=useContext(CartContext);
 
 
-
+        const onAdd=(amount) => {
+            setaddCart(true);
+                addItem(detail,amount)
+        }
 
 return(
     <div>

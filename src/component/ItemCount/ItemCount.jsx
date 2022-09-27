@@ -5,25 +5,26 @@ import './ItemCount.css'
 
 const ItemCount=({stock, inicial,onAdd})=>{
 
-const[vInicial, setVInicial]=useState(inicial)
+    const[vInicial, setVInicial]=useState(inicial)
 
-const plus=()=>{
-    if (vInicial<stock)
-    {
-        setVInicial(vInicial+1)
-    }
-}
+        const plus=()=>{
+            if (vInicial<stock)
+            {
+                setVInicial(vInicial+1)
+            }
+        }
 
-const substract=()=>{
-    if (vInicial>0)
-    {
-        setVInicial(vInicial-1)
-    }
-}
+        const substract=()=>{
+            if (vInicial>0)
+            {
+                setVInicial(vInicial-1)
+            }
+        }
 
-useEffect(()=>{
-    setVInicial(parseInt(vInicial))
-},[vInicial])
+            useEffect(()=>
+                {
+                    setVInicial(parseInt(vInicial))
+                },[vInicial])
 
 
 return(
