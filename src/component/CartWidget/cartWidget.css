@@ -24,3 +24,20 @@ font-size: 1rem;
 margin-top: 2.3rem;
 margin-left: 0.3rem;
 }
+
+.cnt{
+    position: absolute;
+    color: #C0D9D9;
+    background-color:#4A594F;
+    width: 1.4rem;
+    height: 1.4rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border-radius: 1.5rem;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    margin-top: 2.3rem;
+    margin-left: 0.3rem;
+}

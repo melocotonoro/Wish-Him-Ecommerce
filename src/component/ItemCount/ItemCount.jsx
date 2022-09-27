@@ -8,15 +8,21 @@ const ItemCount=({stock, inicial,onAdd})=>{
 const[vInicial, setVInicial]=useState(inicial)
 
 const plus=()=>{
-    if (vInicial<stock){setVInicial(vInicial+1)}
+    if (vInicial<stock)
+    {
+        setVInicial(vInicial+1)
+    }
 }
 
 const substract=()=>{
-    if (vInicial>0){setVInicial(vInicial-1)}
+    if (vInicial>0)
+    {
+        setVInicial(vInicial-1)
+    }
 }
 
 useEffect(()=>{
-setVInicial(parseInt(vInicial))
+    setVInicial(parseInt(vInicial))
 },[vInicial])
 
 

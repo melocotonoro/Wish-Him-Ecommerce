@@ -2,12 +2,61 @@
 position: absolute;
 width: 90%;
 text-align: center;
-margin: 10rem auto;
+margin: 14rem 5rem;
 border-radius: 0.5rem;
+font-family: 'Roboto Mono', monospace;
 box-shadow: 1rem 1rem 2rem #bebebe,
 -1rem -1rem 2rem #ffffff;
 overflow: hidden;
-font-family: 'Roboto Mono', monospace;
 padding-bottom: 3rem;
 }
 
+.titleCart{
+position: absolute;
+font-family: 'Roboto Mono', monospace;
+margin: 8rem 2rem;
+text-align: center;
+}
+.descriptionProd{
+width:78%;
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+list-style-type: none;
+margin-right: 5rem;
+}
+
+.btnClear{
+display: inline-block;
+border-radius: 0.25rem;
+background-color: #358483;
+border: none;
+text-align: center;
+font-size: 1rem;
+padding: .5rem;
+transition: all 0.5s;
+cursor: pointer;
+margin: 0.31rem;
+color: aliceblue;
+font-family: 'Roboto Mono', monospace;
+height: 2rem;
+width: 5.2rem;
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+.btn:after {
+content: '»';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -1rem;
+transition: 0.5s;
+}
+        
+.btn:hover {
+padding-right: 1rem;
+opacity: 1;
+right: 0;
+}

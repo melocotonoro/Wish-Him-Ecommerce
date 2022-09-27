@@ -1,11 +1,13 @@
 import React, { useState,useEffect } from 'react' 
 import { useParams } from 'react-router-dom';
 import ItemDetail from '../ItemDetail/ItemDetail';
+import Spinner from '../Spinner/Spinner';
+
 import './ItemDetailContainer.css'
 
 const ItemDetailContainer = ()=>{
 const [detail, setDetail] = useState({})
-
+const [loading,setLoading]=useState(true)
 const{id}=useParams();
 
 useEffect(() => {
@@ -22,11 +24,15 @@ const getItem= new Promise(resolve =>{
 // const uniqueProd=()=> dataCrd.find(el=> el.id === id)
 
 setTimeout(() => {
+    setLoading(false)
     resolve(dataCrd)
 }, 2000);
 });
 
-getItem.then(el => setDetail(el.find(prod=>prod.id === id)))
+getItem.then(el => setDetail(el.find(prod=>prod.id === id)),
+
+setLoading(true)
+)
 
 
 .catch(()=>{
@@ -36,12 +42,16 @@ getItem.then(el => setDetail(el.find(prod=>prod.id === id)))
 },[id]);
 
 return(
+<div className='detailContainer'>
+
+    { loading
+        ? <Spinner/>
+    // Componente card de productos con descripcion
+        :<ItemDetail detail={detail}/>
+    }
+
+</div>
     
-    <div className='detailContainer'>
-        {/* Componente card de productos con descripcion*/}
-        <ItemDetail detail={detail}/>
-    </div>
 )
 }
-
 export default ItemDetailContainer

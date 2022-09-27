@@ -7,11 +7,11 @@ const Context=({children})=>{
 //estado de cart
 const [cart,setCart]=useState([])
 
-const addItem=(detail,amount)=>{
 
+const addItem=(detail,amount)=>{
 let copyCart
 //Filtra si esta el objeto en el array
-let searchProd= cart.find(el=>el.id===detail.id);
+    let searchProd= cart.find(el=>el.id===detail.id);
 
 //Si está el obj, a la propiedad "amount" del objeto nuevo creado "searchProd", le sumo la nueva cantidad 
     if(searchProd){
@@ -26,32 +26,42 @@ let searchProd= cart.find(el=>el.id===detail.id);
 setCart(copyCart)
 }
 
+
 //Remover objeto unico 
 const removeItem=(id)=>{
-let deleteItem= cart.filter(prop=>prop.id!==id)
+    let deleteItem= cart.filter(prop=>prop.id!==id)
 
-setCart(deleteItem)
+    setCart(deleteItem)
 }
 
 //elimina todos los productos de Cart
-const clear=()=>{setCart([])}
+const clear=()=>{
+    setCart([])
+}
 
 //Si encuentra el producto filtrando por su Id
 const isInCart=(id)=>cart.some((prod)=>prod.id=== id)
 
-//Va a sumar todos productos agregados en Cart
+//Va a sumar la cantidad de productos agregados en Cart
 const countProp=()=>{
 let newObj=[...cart]
 let addAmount=0
 
-newObj.forEach((product)=>{
-    addAmount=addAmount+product.amount
+    newObj.forEach((product)=>{
+        addAmount=addAmount+product.amount
 })
-return addAmount
+        return addAmount
 }
 
+//valor total por poducto 
+const totalPrice = () => {
+    return cart.reduce((id, el) =>
+    id + el.amount * el.price, 0)
+}
+
+
 return(
-    <CartContext.Provider value={{addItem,removeItem,clear,isInCart,countProp}}>
+    <CartContext.Provider value={{addItem,removeItem,clear,isInCart,countProp,totalPrice, cart}}>
         {
         children
         }

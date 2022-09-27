@@ -5,7 +5,6 @@ import './navBar.css'
 
 function NavBar(){
 
-let logo= "logo.png"
 
 //Array con rutas para usar en los elementos del NavBar
 const section = [{name:"Principal", root:"./"},
@@ -20,7 +19,7 @@ return (
         <div className="containerNV">
             <div className="lg">
                 <NavLink to={"/"}>
-                <img src={logo} alt="logo" className="logo"></img>
+                <img src='https://imagizer.imageshack.com/img924/2699/LGzg31.png' alt="logo" className="logo"></img>
                 </NavLink>
                 
                 <h4>WISH HIM</h4>
