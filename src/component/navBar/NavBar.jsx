@@ -21,7 +21,7 @@ const NavBar=()=>{
             <div className="containerNV">
                 <div className="lg">
                     <NavLink to={"/"}>
-                    <img src='https://imagizer.imageshack.com/img924/2699/LGzg31.png' alt="logo" className="logo"></img>
+                    <img src='https://res.cloudinary.com/ds7jaqjll/image/upload/v1664333333/Wish-Him/logo_zj6g8d.png' alt="logo" className="logo"></img>
                     </NavLink>
                     
                     <h4>WISH HIM</h4>

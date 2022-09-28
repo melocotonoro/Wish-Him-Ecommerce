@@ -4,4 +4,5 @@ height: 38.5rem;
 display: flex;
 justify-content: center;
 margin-top: 5rem;
+flex-wrap: wrap;
 }

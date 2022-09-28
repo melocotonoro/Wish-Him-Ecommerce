@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react' 
 import { useParams } from 'react-router-dom';
 import ItemDetail from '../ItemDetail/ItemDetail';
+import {getFirestore,collection,getDoc,doc} from "firebase/firestore"
 import Spinner from '../Spinner/Spinner';
 
 import './ItemDetailContainer.css'
@@ -11,33 +12,19 @@ const ItemDetailContainer = ()=>{
         const{id}=useParams();
 
         useEffect(() => {
-            const dataCrd=[
-                {id:"1",title:"Gorra Yankees",description:"Gorra camuflada de los NY Yankees",pictureUrl:"https://imagizer.imageshack.com/img924/4809/t72Pu2.jpg",price:2000, stock:15,category:"accesorios"},
-                {id:"2",title:"Lentes de sol",description:"Lentes de sol modelo Urban Vulk",pictureUrl:"https://imagizer.imageshack.com/img923/2272/mSxmix.jpg",price:3000,stock:30,category:"accesorios"},
-                {id:"3",title:"Reloj deportivo",description:"Reloj deportivo marca Jaguar",pictureUrl:"https://imagizer.imageshack.com/img922/4416/FClWyB.jpg",price:15000,stock:45,category:"accesorios"},
-                {id:"4",title:"Remera urbana",description:"Remera urbana marca Marko",pictureUrl:"https://imagizer.imageshack.com/img923/8982/NE5i9h.jpg",price:2500, stock:90,category:"ropa"}
-            ];
+            const db=getFirestore()
 
-            const getItem= new Promise(resolve =>{
+            const dataCollections=collection(db,"productos")
+            const itemCollection=doc(dataCollections,id)
 
-            // //Busca un solo objeto del array de productos
-            // const uniqueProd=()=> dataCrd.find(el=> el.id === id)
+            getDoc(itemCollection).then(res=>{
+                console.log(res)
 
-            setTimeout(() => {
-                setLoading(false)
-                    resolve(dataCrd)
-            }, 2000);
-            });
+                const object={id:res.id, ...res.data()}  
 
-                getItem.then(el => setDetail(el.find(prod=>prod.id === id)),
-
-            setLoading(true)
-            )
-
-            .catch(()=>{
-                console.log("Se ha producido un error")
-            })
-
+                    setDetail(object)
+                    setLoading(false)
+                })
         },[id]);
 
     return(

@@ -4,7 +4,7 @@ const Spinner= ()=>{
 
     return(
         <div className="loading" >
-            <img src='https://imagizer.imageshack.com/img922/8996/SkBNJ9.gif 'alt="loading"></img>
+            <img src='https://res.cloudinary.com/ds7jaqjll/image/upload/v1664333333/Wish-Him/Spinner_vcfzmw.gif'alt="loading"></img>
         </div>
     )
 }
