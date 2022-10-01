@@ -11,9 +11,15 @@ const CartWidget=()=>{
             return(
                 <div className="containerCart">
                     <Link to='/cart'>
-                        <img className="shopCart" src='https://res.cloudinary.com/ds7jaqjll/image/upload/v1664333333/Wish-Him/shoppingCart-01_c0m0as.png' alt="carrito compras" />
-                        {/* Condicional para cambiar el estado del CardWidget*/}
-                        <span className={unid===0 ? 'cnt':'count'}>{unid}</span>
+                        {/* Condicional que indica si el carrito no tiene productos no aparece, de lo contrario aparece */}
+                        {
+                            unid === 0
+                                ? <div></div>
+                                :<div>
+                                    <img className="shopCart" src='https://res.cloudinary.com/ds7jaqjll/image/upload/v1664333333/Wish-Him/shoppingCart-01_c0m0as.png' alt="carrito compras" />
+                                    <span className='count'>{unid}</span>
+                                </div>
+                        }
                     </Link>
                 </div>
 )
