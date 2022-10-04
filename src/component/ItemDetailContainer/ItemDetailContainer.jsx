@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import {getFirestore,collection,getDoc,doc} from "firebase/firestore"
 import Spinner from '../Spinner/Spinner';
-
 import './ItemDetailContainer.css'
 
 const ItemDetailContainer = ()=>{
@@ -18,7 +17,6 @@ const ItemDetailContainer = ()=>{
             const itemCollection=doc(dataCollections,id)
 
             getDoc(itemCollection).then(res=>{
-                console.log(res)
 
                 const object={id:res.id, ...res.data()}  
 

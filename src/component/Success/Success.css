@@ -1,0 +1,26 @@
+.bckOrder{
+background: url("https://res.cloudinary.com/ds7jaqjll/image/upload/v1664835144/Wish-Him/congratsAnimation_qydj3z.gif") no-repeat;
+background-size:100% 90%;
+overflow:visible;
+position: absolute;
+width: 90%;
+margin-top: 6rem;
+margin-left: 5%;
+margin-right: 5%;
+text-align: center;
+height: 85%;
+font-family: 'Roboto Mono', monospace;
+display: flex;
+flex-flow: column wrap;
+align-items: center;
+justify-content: center;
+}
+
+.titleSuccess{
+font-size:3.25rem;
+font-weight:bold;
+}
+
+.textSuccess{
+font-size: x-large;
+}

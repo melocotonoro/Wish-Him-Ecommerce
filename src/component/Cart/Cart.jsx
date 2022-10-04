@@ -36,10 +36,12 @@ const Cart = () => {
                                 <DetailCart key={obj.id} obj={obj}/>
                                 )
                             }
-                            <p>Total a pagar:{totalPrice()} </p>
+                            <p><b>Total a pagar:{totalPrice()}</b></p>
 
-                                {/*Botón Vaciar carrito*/}
-                                <button className="btnClear" onClick={clear} >Vaciar</button>
+                            {/*Botón Vaciar carrito*/}
+                            <button className="btnClear" onClick={clear} >Vaciar Carrito</button>
+
+                            <Link to={"/checkout"}><button className="btnClear">Finalizar compra</button></Link>
                     </div>
                 </div>
             }

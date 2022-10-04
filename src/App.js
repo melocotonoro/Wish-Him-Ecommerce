@@ -7,6 +7,8 @@ import Main from './component/Main/Main';
 import ItemListContainer from './component/ItemListContainer/ItemListContainer';
 import Cart from './component/Cart/Cart';
 import Context from './component/CartContext/CartContex';
+import Checkout from './component/checkout/Checkout';
+
 
 
 function App() {
@@ -29,8 +31,13 @@ return (
             {/* Componente contenedor de detalle del producto*/}
             <Route exact path='/item/:id' element={<ItemDetailContainer/>}/>
 
+            {/* Componente contenedor que muestra los productos seleccionados en el carrito*/}
             <Route exact path='/cart' element={<Cart/>}/>
-            </Routes>  
+
+            {/* Componente contenedor que muestra el formulario*/}
+            <Route exact path='/checkout' element={<Checkout/>}/>
+
+          </Routes>  
       </div>
     
     </BrowserRouter>

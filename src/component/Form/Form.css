@@ -1,0 +1,81 @@
+.containerForm{
+position: absolute;
+width: 40%;
+text-align: center;
+margin: 14rem 30%;
+border-radius: 0.5rem;
+font-family: 'Roboto Mono', monospace;
+box-shadow: 1rem 1rem 2rem #bebebe,
+-1rem -1rem 2rem #ffffff;
+overflow: hidden;
+padding-bottom: 3rem;
+border: 1px solid #C0D9D9;
+}
+
+.containerLabel{
+display: flex;
+align-items: center;
+font-size: medium;
+width: 50%;
+margin: 1rem 25%;
+}
+.containerInput{
+width: 50%;
+height: 2.2em;
+border-radius: .3rem;
+border: none;
+background-color: #E2D7CA;
+}
+
+.input{
+height: 2.2em;
+border-radius: .3rem;
+border: none;
+background-color: #E2D7CA;
+margin-right: .5rem;
+}
+.span{
+font-size: small;
+margin-right: 3rem;
+visibility: hidden;
+}
+
+.alert{
+font-size: small;
+display: flex;
+align-items: center;
+width: 50%;
+margin: 0 25%; 
+visibility: hidden; 
+}
+
+.btnConfirm{
+display: inline-block;
+border-radius: 0.25rem;
+background-color: #358483;
+border: none;
+text-align: center;
+font-size: 1rem;
+transition: all 0.5s;
+cursor: pointer;
+margin: 0.31rem;
+color: aliceblue;
+font-family: 'Roboto Mono', monospace;
+height: 3.125rem;
+width: 7.2rem;
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.btnConfirm:hover {
+padding-right: 1rem;
+opacity: 1;
+right: 0;
+}
+
+.btnConfirm:disabled{
+opacity:0.5;
+cursor: not-allowed;
+}
