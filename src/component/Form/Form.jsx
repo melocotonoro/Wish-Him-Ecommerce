@@ -41,6 +41,7 @@ const Form=({changeId})=>{
             addDoc(orderRegister,newOrder).then((el)=>{
                 changeId(el.id);
             })
+                .catch(error=> console.log(error)); 
         }
 
     return(
