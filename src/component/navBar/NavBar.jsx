@@ -11,7 +11,7 @@ const NavBar=()=>{
         {name:"Principal", root:"./"},
         {name:"Ropa", root:"./category/ropa"},
         {name:"Accesorios", root:"./category/accesorios"},
-        {name:"Search", root:"./"}
+        {name:"Search", root:"./404"}
 ];
 
 

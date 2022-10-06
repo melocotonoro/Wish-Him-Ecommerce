@@ -8,6 +8,7 @@ import ItemListContainer from './component/ItemListContainer/ItemListContainer';
 import Cart from './component/Cart/Cart';
 import Context from './component/CartContext/CartContex';
 import Checkout from './component/checkout/Checkout';
+import Page404 from './component/Page404/Page404';
 
 
 
@@ -36,6 +37,9 @@ return (
 
             {/* Componente contenedor que muestra el formulario*/}
             <Route exact path='/checkout' element={<Checkout/>}/>
+
+            {/* Componente de Página no encontrada*/}
+            <Route exact path='/404' element={<Page404/>}/>
 
           </Routes>  
       </div>

@@ -1,0 +1,18 @@
+.container404{
+    background: url("https://res.cloudinary.com/ds7jaqjll/image/upload/v1665024499/Wish-Him/404-error_r4xpvm.gif") no-repeat;
+    background-size:100% 90%;
+    overflow:visible;
+    position: absolute;
+    width: 100%;
+    margin-top: 6rem;
+    height: 75%;
+}
+.actv{
+position: absolute;
+margin-top: 30%;
+margin-right: 40%;
+margin-left: 40%;
+font-family: 'Roboto Mono', monospace;
+font-size: 1.3rem;
+color: #233A43;
+}
