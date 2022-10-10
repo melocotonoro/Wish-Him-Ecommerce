@@ -27,9 +27,10 @@ const Form=({changeId})=>{
         const expression={
             name:/^[a-z A-Z Á-ÿ \s]{2,15}$/,
             lastName:/^[a-z A-Z Á-ÿ \s]{2,15}$/,
-            mail:/^[a-z A-Z 0-9 _ . -]+@[a-z A-Z 0-9 -.]+\. [a-z A-Z 0-9-.]+$/,
+            mail:/^[a-z A-Z 0-9 _ . -]+@[a-z A-Z 0-9 -.]+\.[a-z A-Z 0-9-.]+$/,
             phone: /^\d{10}$/
             }
+
 
         const handlerSummit=(e)=>{
             e.preventDefault();
@@ -63,15 +64,21 @@ const Form=({changeId})=>{
 
                 <form onSubmit={handlerSummit}>
 
-                    <InputsForm className='containers' label="Nombre" type="text" name="nombre" placeholder= 'Ingresa tu nombre' value={name} error="Incorrecto. No incluyas" error2=" números o símbolos." expresion={expression.name}  onChange={handlerName} />
+                    <InputsForm className='containers' label="Nombre" type="text" name="nombre" placeholder= 'Ingresa tu nombre' value={name} error="Incorrecto. No incluyas" error2=" números o símbolos." expresion={expression.name}  onChange={handlerName}/>
 
                     <InputsForm className='containers' label="Apellido" type="text" name="apellido" placeholder= 'Ingresa tu apellido' value={lastName} error="Incorrecto. No incluyas" error2=" números o símbolos." expresion={expression.lastName} onChange={handlerLastName} />
 
                     <InputsForm className="containerInput" label="Mail" type="email" name="mail" placeholder= 'Ingresa tu mail'  value={mail} error="Incorrecto.El formato de mail es erróneo." error2="" expresion={expression.mail} onChange={handlerMail}/>
 
-                    <InputsForm className="containerInput" label="Confirmar Mail" type="email" name="mail1" placeholder= 'Ingresa nuevamente tu mail'expresion=""  value={confirmMail} error="Incorrecto.No coinciden los mails." error2="" onChange={handlerMail1} />
-
-                    <InputsForm className="containerInput" label="Teléfono" type="number" name="telefono" placeholder= 'Ingresa tu teléfono.No incluyas espacios ni guiones entremedio' value={phone} error="Incorrecto.Formato de 10 dígitos." error2="Característica sin '0' y celulares sin '15'."expresion={expression.phone} onChange={handlerPhone} />
+                    <InputsForm className="containerInput" label="Confirmar Mail" type="email" name="mail1" placeholder= 'Ingresa nuevamente tu mail' value={confirmMail} error="Incorrecto.No coinciden los mails." error2="" onChange={handlerMail1}/>
+                        <div>
+                            {
+                            mail!==confirmMail
+                                            ?<span className='span'>Incorrecto.No coinciden los mails.</span>
+                                            :<span></span> 
+                            }
+                        </div> 
+                    <InputsForm className="containerInput" label="Teléfono" type="number" name="telefono" placeholder= 'Ingresa tu teléfono.No incluyas espacios ni guiones intermedio' value={phone} error="Incorrecto.Formato de 10 dígitos." error2="Característica sin '0' y celulares sin '15'."expresion={expression.phone} onChange={handlerPhone} />
 
                         {/* Si los campos no están completos el botón esta en estado disabled */}
                         <div>
