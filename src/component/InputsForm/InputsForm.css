@@ -1,0 +1,30 @@
+.containers{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    font-size: medium;
+    width: 90%;
+    margin: .05rem 1rem;
+}
+
+.input{
+    height: 2.2em;
+    line-height: 2.2rem;
+    border-radius: .3rem;
+    border: none;
+    background-color: #E2D7CA;
+    width: 85%;
+    transition:.3s ease all;
+    border: 3px solid transparent;
+}
+
+.input:hover{
+    border: 3px solid #233A43;
+}
+
+.span{
+    font-size: small;
+    font-weight: 700;
+    color: #B00020;
+    /* visibility: hidden; */
+}

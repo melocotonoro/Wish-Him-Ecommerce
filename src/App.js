@@ -39,7 +39,7 @@ return (
             <Route exact path='/checkout' element={<Checkout/>}/>
 
             {/* Componente de Página no encontrada*/}
-            <Route exact path='/404' element={<Page404/>}/>
+            <Route path='*' element={<Page404/>}/>
 
           </Routes>  
       </div>
