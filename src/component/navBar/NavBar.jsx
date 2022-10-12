@@ -29,6 +29,7 @@ const NavBar=()=>{
                 <ul className="itemsNv">
                     {section.map((el) =><NavLink to={el.root} key={el.name} className="items"><li>{el.name}</li></NavLink> )}
                 </ul>
+
                 {/* Componente icono carrito*/}
                 <CartWidget/>
             </div>

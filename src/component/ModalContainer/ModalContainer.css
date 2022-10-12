@@ -1,0 +1,23 @@
+.titOrder{
+    background-color: #358483;
+    border-radius: .4rem;
+}
+
+.cardModal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    line-height: 4rem;
+
+}
+
+.cardModal img{
+    max-height: 6.25rem ;
+}
+
+.totalPrice{
+margin-left: 20vw;
+font-size:1.3rem;
+background-color: #358483;
+padding: .5rem 0;
+border-radius: .4rem;
+}

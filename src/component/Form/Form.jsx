@@ -23,7 +23,7 @@ const Form=({changeId})=>{
         const handlerPhone=(e)=>setPhone(e.target.value)
 
 
-        //Expresiones para validar datos de los campos del input
+        //Expresiones regulares para validar datos de los campos del input
         const expression={
             name:/^[a-z A-Z Á-ÿ \s]{2,15}$/,
             lastName:/^[a-z A-Z Á-ÿ \s]{2,15}$/,
@@ -71,6 +71,8 @@ const Form=({changeId})=>{
                     <InputsForm className="containerInput" label="Mail" type="email" name="mail" placeholder= 'Ingresa tu mail'  value={mail} error="Incorrecto.El formato de mail es erróneo." error2="" expresion={expression.mail} onChange={handlerMail}/>
 
                     <InputsForm className="containerInput" label="Confirmar Mail" type="email" name="mail1" placeholder= 'Ingresa nuevamente tu mail' value={confirmMail} error="Incorrecto.No coinciden los mails." error2="" onChange={handlerMail1}/>
+                        
+                    {/* Condicional para validar que coincidan ambos mails ingresados */}
                         <div>
                             {
                             mail!==confirmMail

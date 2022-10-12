@@ -35,10 +35,9 @@ right: 0;
 }
 
 .prodContainer{
-display: flex;
 width: 85%;
-flex-direction: row;
-justify-content:space-between;   
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
 }
 
 .prodContainer img{
