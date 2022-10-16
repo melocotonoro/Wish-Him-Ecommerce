@@ -2,12 +2,11 @@
     position: absolute;
     width: 40%;
     text-align: center;
-    margin: 14rem 30%;
+    margin: 5.9rem 30%;
     border-radius: 0.5rem;
     font-family: 'Roboto Mono', monospace;
     box-shadow: 1rem 1rem 2rem #bebebe,
     -1rem -1rem 2rem #ffffff;
-    overflow: hidden;
     padding-bottom: 3rem;
     border: 1px solid #C0D9D9;
 }

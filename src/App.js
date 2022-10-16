@@ -1,4 +1,3 @@
-
 import './App.css';
 import NavBar from './component/navBar/NavBar';
 import ItemDetailContainer from './component/ItemDetailContainer/ItemDetailContainer';
@@ -9,6 +8,7 @@ import Cart from './component/Cart/Cart';
 import Context from './component/CartContext/CartContex';
 import Checkout from './component/checkout/Checkout';
 import Page404 from './component/Page404/Page404';
+import Footer from './component/Footer/Footer';
 
 
 
@@ -16,7 +16,7 @@ function App() {
 
 return (
 
- <Context>
+  <Context>
     <BrowserRouter>
       <div className='container'>
         {/* Componente NavBar*/}
@@ -41,7 +41,9 @@ return (
             {/* Componente de Página no encontrada*/}
             <Route path='*' element={<Page404/>}/>
 
-          </Routes>  
+          </Routes> 
+
+          <Footer/>
       </div>
     
     </BrowserRouter>

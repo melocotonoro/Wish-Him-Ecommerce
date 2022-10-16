@@ -35,7 +35,6 @@ return(
             <button onClick={plus} >+</button>
         </div>
             <button disabled={stock<= 0} onClick={()=>{onAdd(vInicial)}} className="btnAdd">Agregar</button>
-            {/* <p className="stock">Quedan {stock} unidades</p> */}
             <p className="stock">Cantidad de productos seleccionados {vInicial} </p>
             
     </div>

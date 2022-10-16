@@ -11,6 +11,7 @@ const ModalContainer = ({stateModal,closeModal,orderId}) => {
     
             return (
                 <div>
+                    
                     <Modal stateModal={stateModal} closeModal={closeModal}>
                         {/* Estructura de la orden que se va a visualizar */}
                         <h2 className='titOrder'>Orden: {orderId}</h2>

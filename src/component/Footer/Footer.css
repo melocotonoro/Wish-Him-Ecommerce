@@ -1,0 +1,51 @@
+.footer{
+    position: fixed;
+    left:0px;
+    bottom:0px;
+    background-color: #4a594fe1;
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color:#FFFAED;
+    font-family: 'Roboto Mono', monospace;
+    height: 2rem;
+    overflow:hidden;
+    transition: .5s all ease;
+    }
+
+.footer:hover{
+    height: 14.5rem;
+    cursor: pointer;
+    top: 14.5rem;
+}
+
+.footer h2{
+    padding-top: .8rem;
+}
+.containerLg{
+    margin: 1.5rem;
+    height: min-content;
+    padding: 1rem;
+}
+.imgFooter{
+    height: 5rem;
+}
+
+.containerSocialMedia{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+
+}
+
+.containerSocialMedia img{
+    height: min-content;
+}
+
+.containerContact{
+    display: flex;
+    height: 3rem;
+}
+.containerContact img{
+    padding: .8rem;
+}

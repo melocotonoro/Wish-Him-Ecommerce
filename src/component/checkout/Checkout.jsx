@@ -8,11 +8,11 @@ const Checkout=()=>{
 
         const changeId=(numberOrder)=>{setOrderId(numberOrder)} 
 
-            return(
-                    orderId
-                            ? <Success orderId={orderId}></Success>
-                            :<div><Form changeId={changeId}/></div>
-            )
+        return(
+                orderId
+                        ? <Success orderId={orderId}></Success>
+                        :<div><Form changeId={changeId}/></div>
+        )
 }
 
 export default Checkout

@@ -6,9 +6,10 @@ import "./Success.css"
 
 const Success=({orderId})=>{
 
+
         const {clear}=useContext(CartContext)
 
-        // Estado para controlar laapertura/cierre del modal
+        // Estado para controlar la apertura/cierre del modal
         const [stateModal,setStateModal]=useState(false)
 
         const openModal=()=>setStateModal(true)

@@ -1,7 +1,7 @@
 import React from "react";
-// import Category from "../Category/Category";
 import ItemListContainer from "../ItemListContainer/ItemListContainer";
 import SectionUs from "../SectionUs/SectionUs";
+
 
 const Main= ()=>{
     return(
