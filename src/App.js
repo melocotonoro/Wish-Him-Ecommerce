@@ -1,7 +1,7 @@
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './component/navBar/NavBar';
 import ItemDetailContainer from './component/ItemDetailContainer/ItemDetailContainer';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Main from './component/Main/Main';
 import ItemListContainer from './component/ItemListContainer/ItemListContainer';
 import Cart from './component/Cart/Cart';
@@ -14,41 +14,37 @@ import Footer from './component/Footer/Footer';
 
 function App() {
 
-return (
+  return (
 
-  <Context>
-    <BrowserRouter>
-      <div className='container'>
-        {/* Componente NavBar*/}
-          <NavBar/>
+      <Context>
+        <BrowserRouter>
+          <div className='container'>
+              <NavBar/>
+              <Routes>
+                {/* Componente contenedor  de ItemListContainer, SectionUs y Category*/}
+                <Route exact path='/' element={<Main/>}/>
+                {/* Componente contenedor  de ItemListContainer, SectionUs y Category*/}
+                <Route exact path='/category/:id' element={<ItemListContainer/>}/>
 
-          <Routes>
+                {/* Componente contenedor de detalle del producto*/}
+                <Route exact path='/item/:id' element={<ItemDetailContainer/>}/>
 
-            {/* Componente contenedor  de ItemListContainer, SectionUs y Category*/}
-            <Route exact path='/' element={<Main/>}/>
-            {/* Componente contenedor  de ItemListContainer, SectionUs y Category*/}
-            <Route exact path='/category/:id' element={<ItemListContainer/>}/>
+                {/* Componente contenedor que muestra los productos seleccionados en el carrito*/}
+                <Route exact path='/cart' element={<Cart/>}/>
 
-            {/* Componente contenedor de detalle del producto*/}
-            <Route exact path='/item/:id' element={<ItemDetailContainer/>}/>
+                {/* Componente contenedor que muestra el formulario*/}
+                <Route exact path='/checkout' element={<Checkout/>}/>
 
-            {/* Componente contenedor que muestra los productos seleccionados en el carrito*/}
-            <Route exact path='/cart' element={<Cart/>}/>
+                {/* Componente de Página no encontrada*/}
+                <Route path='*' element={<Page404/>}/>
 
-            {/* Componente contenedor que muestra el formulario*/}
-            <Route exact path='/checkout' element={<Checkout/>}/>
-
-            {/* Componente de Página no encontrada*/}
-            <Route path='*' element={<Page404/>}/>
-
-          </Routes> 
-
-          <Footer/>
-      </div>
-    
-    </BrowserRouter>
-  </Context>
-);
+              </Routes> 
+              <Footer/>
+          </div>
+        
+        </BrowserRouter>
+      </Context>
+  );
 }
 
 export default App;

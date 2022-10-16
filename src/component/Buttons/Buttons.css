@@ -1,42 +1,42 @@
 .btns{
-display: inline-block;
-border-radius: 0.25rem;
-background-color: #358483;
-border: none;
-text-align: center;
-font-size: 1rem;
-padding: 1rem;
-width: 9rem;
-transition: all 0.5s;
-cursor: pointer;
-margin: 0.31rem;
-color: aliceblue;
-font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    border-radius: 0.25rem;
+    background-color: #358483;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 9rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0.31rem;
+    color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .btns span {
-height: 1.2rem;
-width: 5.2rem;
-cursor: pointer;
-display: inline-block;
-position: relative;
-transition: 0.5s;
+    height: 1.2rem;
+    width: 5.2rem;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
 
 .btns span:after {
-content: '»';
-position: absolute;
-opacity: 0;
-top: 0;
-right: -1rem;
-transition: 0.5s;
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -1rem;
+    transition: 0.5s;
 }
 
 .btns:hover span {
-padding-right: 1rem;
+    padding-right: 1rem;
 }
 
 .btns:hover span:after {
-opacity: 1;
-right: 0;
+    opacity: 1;
+    right: 0;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import "./Modal.css"
 
 const Modal = ({stateModal,closeModal,children}) => {
+    
     return (
             <article className={`modal ${stateModal && "activeModal"}`}>
                 <div className='modalContainer'>

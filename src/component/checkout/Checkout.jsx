@@ -6,12 +6,12 @@ import Success from "../Success/Success";
 const Checkout=()=>{
         const[orderId,setOrderId]= useState("")
 
-        const changeId=(numberOrder)=>{setOrderId(numberOrder)} 
+                const changeId=(numberOrder)=>{setOrderId(numberOrder)} 
 
-        return(
-                orderId
-                        ? <Success orderId={orderId}></Success>
-                        :<div><Form changeId={changeId}/></div>
+                return(
+                        orderId
+                                ? <Success orderId={orderId}></Success>
+                                :<div><Form changeId={changeId}/></div>
         )
 }
 

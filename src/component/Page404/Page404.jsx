@@ -4,7 +4,6 @@ import "./Page404.css"
 
 const Page404=()=>{
 
-
     return(
             <div>
                 <div className='container404'/>

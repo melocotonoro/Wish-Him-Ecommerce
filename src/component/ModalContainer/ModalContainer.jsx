@@ -10,34 +10,33 @@ const ModalContainer = ({stateModal,closeModal,orderId}) => {
         const titleOrder=["Cantidad","Producto","Descripción","Total"]
     
             return (
-                <div>
-                    
-                    <Modal stateModal={stateModal} closeModal={closeModal}>
-                        {/* Estructura de la orden que se va a visualizar */}
-                        <h2 className='titOrder'>Orden: {orderId}</h2>
+                    <div>
+                        <Modal stateModal={stateModal} closeModal={closeModal}>
+                            {/* Estructura de la orden que se va a visualizar */}
+                            <h2 className='titOrder'>Orden: {orderId}</h2>
 
-                        <div className='cardModal'>
+                            <div className='cardModal'>
                                 {
                                     titleOrder.map(e=> <b>{e}</b>)
                                 }
-                        </div>
-                        {
+                            </div>
+                            {
                             cart.map(el=>(
                                 <div className='cardModal'>
-                                <b>{el.amount}</b>
-                                <img src={el.pictureUrl} alt={el.title}/>
-                                <p>{el.title}</p>
-                                <b> $ {el.amount*el.price}</b>
-                            </div>
+                                    <b>{el.amount}</b>
+                                    <img src={el.pictureUrl} alt={el.title}/>
+                                    <p>{el.title}</p>
+                                    <b> $ {el.amount*el.price}</b>
+                                </div>
                             ))
-                        }
-                            <div className='totalPrice'> Total a pagar $
-                                {
-                                    totalPrice()
-                                }
+                            }
+                                <div className='totalPrice'> Total a pagar $
+                                    {
+                                        totalPrice()
+                                    }
                             </div>
-                    </Modal>
-                </div>
+                        </Modal>
+                    </div>
 )
 }
 

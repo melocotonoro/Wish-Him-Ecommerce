@@ -8,11 +8,11 @@
     height: 75%;
 }
 .actv{
-position: absolute;
-margin-top: 30%;
-margin-right: 40%;
-margin-left: 40%;
-font-family: 'Roboto Mono', monospace;
-font-size: 1.3rem;
-color: #233A43;
+    position: absolute;
+    margin-top: 30%;
+    margin-right: 40%;
+    margin-left: 40%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.3rem;
+    color: #233A43;
 }

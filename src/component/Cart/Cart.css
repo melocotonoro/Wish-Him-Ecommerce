@@ -1,52 +1,52 @@
 .cartContainer{
-position: absolute;
-width: 90%;
-text-align: center;
-margin: 14rem 5rem;
-border-radius: 0.5rem;
-font-family: 'Roboto Mono', monospace;
-box-shadow: 1rem 1rem 2rem #bebebe,
--1rem -1rem 2rem #ffffff;
-overflow: hidden;
-padding-bottom: 3rem;
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    margin: 14rem 5rem;
+    border-radius: 0.5rem;
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 1rem 1rem 2rem #bebebe,
+    -1rem -1rem 2rem #ffffff;
+    overflow: hidden;
+    padding-bottom: 3rem;
 }
 
 .titleCart{
-position: absolute;
-font-family: 'Roboto Mono', monospace;
-margin: 8rem 2rem;
-text-align: center;
+    position: absolute;
+    font-family: 'Roboto Mono', monospace;
+    margin: 8rem 2rem;
+    text-align: center;
 }
 .descriptionProd{
-width:78%;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-list-style-type: none;
-margin-right: 5rem;
+    width:78%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    margin-right: 5rem;
 }
 
 .btnClear{
-display: inline-block;
-border-radius: 0.25rem;
-background-color: #358483;
-border: none;
-text-align: center;
-font-size: 1rem;
-transition: all 0.5s;
-cursor: pointer;
-margin: 0.31rem;
-color: aliceblue;
-font-family: 'Roboto Mono', monospace;
-height: 3.125rem;
-width: 7.2rem;
-cursor: pointer;
-display: inline-block;
-position: relative;
-transition: 0.5s;
+    display: inline-block;
+    border-radius: 0.25rem;
+    background-color: #358483;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0.31rem;
+    color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
+    height: 3.125rem;
+    width: 7.2rem;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
 
 .btnClear:hover {
-padding-right: 1rem;
-opacity: 1;
-right: 0;
+    padding-right: 1rem;
+    opacity: 1;
+    right: 0;
 }

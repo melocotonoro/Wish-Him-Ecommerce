@@ -8,18 +8,17 @@ const ItemListContainer=()=>{
 
   const [info,setInfo]= useState([]);
 
-  const{id}=useParams()
+    const{id}=useParams()
 
       useEffect(()=>{
         
         const dataBase= getFirestore()
         const dataCollection= collection(dataBase,"productos")
-        
+
           const check= id ? query(dataCollection,where("category","==",id))
                           :dataCollection
 
-              getDocs(check).then(el=>
-                {
+              getDocs(check).then(el=>{
                   const arrayProd=el.docs.map(data=>({id:data.id, ...data.data()}))
                     setInfo(arrayProd)
                 
@@ -27,11 +26,10 @@ const ItemListContainer=()=>{
       }, [id]);
 
       return(
-          <div className="listContainer">
-            {/* Componente contenedor de cards de productos*/}
-            <ItemList info={info}/>
-          </div>
-      )
+              <div className="listContainer">
+                <ItemList info={info}/>
+              </div>
+)
 }
 
 export default ItemListContainer

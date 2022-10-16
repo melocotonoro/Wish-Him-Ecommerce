@@ -6,33 +6,32 @@ import Spinner from '../Spinner/Spinner';
 import './ItemDetailContainer.css'
 
 const ItemDetailContainer = ()=>{
+
     const [detail, setDetail] = useState({})
     const [loading,setLoading]=useState(true)
+        
         const{id}=useParams();
 
-        useEffect(() => {
-            const db=getFirestore()
+            useEffect(() => {
+                const db=getFirestore()
+                    const dataCollections=collection(db,"productos")
+                    const itemCollection=doc(dataCollections,id)
 
-            const dataCollections=collection(db,"productos")
-            const itemCollection=doc(dataCollections,id)
+                    getDoc(itemCollection).then(res=>{
+                        const object={id:res.id, ...res.data()}  
 
-            getDoc(itemCollection).then(res=>{
+                            setDetail(object)
+                            setLoading(false)
+                    })
+            },[id]);
 
-                const object={id:res.id, ...res.data()}  
-
-                    setDetail(object)
-                    setLoading(false)
-                })
-        },[id]);
-
-    return(
-        <div className='detailContainer'>
-            { loading
-                ? <Spinner/>
-            // Componente card de productos con descripcion
-                :<ItemDetail detail={detail}/>
-            }
-        </div>
+        return(
+                <div className='detailContainer'>
+                    { loading
+                        ? <Spinner/>
+                        :<ItemDetail detail={detail}/>
+                    }
+                </div>
     )
 }
 export default ItemDetailContainer

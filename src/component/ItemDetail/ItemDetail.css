@@ -1,41 +1,40 @@
 .containerDetail{
-display: flex;
-align-items: center;
-justify-content: center;
-width: 60rem;
-height: 31.25rem;
-border-radius: 0.5rem;
-box-shadow: 1rem 1rem 2rem #bebebe,
--1rem -1rem 2rem #ffffff;
-overflow: hidden;
-margin-top: 5rem;
-margin-bottom: 5rem;
-margin-left: auto;
-margin-right: auto;
-font-family: 'Roboto Mono', monospace;
-padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60rem;
+    height: 31.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 1rem 1rem 2rem #bebebe,
+    -1rem -1rem 2rem #ffffff;
+    overflow: hidden;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 3rem;
 }
 
 .titleDetail{
-font-size: xx-large;
-text-align: center;
-font-family: 'Roboto Mono', monospace;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .containerDetail img{
-height:25rem;
+    height:25rem;
 }
 
 .containerDetail h3{
-font-size: 2.5rem;
-text-align:end;
-padding-right: 10rem;
+    font-size: 2.5rem;
+    text-align:end;
+    padding-right: 10rem;
 }
 
 .containerDetail h4{
-
-text-align:center;
-font-style:oblique;
-font-weight:500;
-padding:2rem;
+    text-align:center;
+    font-style:oblique;
+    font-weight:500;
+    padding:2rem;
 }
