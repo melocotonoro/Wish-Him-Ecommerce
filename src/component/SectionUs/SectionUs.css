@@ -3,22 +3,24 @@
     flex-direction:row;
     padding-top: 7.5rem;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    background-image: url('https://res.cloudinary.com/ds7jaqjll/image/upload/v1665983921/Wish-Him/main_compress_ixtcgp.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
 }
 
 .presentTxt{
     font-weight: 700;
     font-size:3rem;
     font-family: 'Roboto Mono', monospace;
+    margin-left: 3rem;
 }
 
 .presentTxt1{
     font-weight: 500;
     font-size:1.5rem;
     font-family: 'Roboto Mono', monospace;
+    margin-left: 3rem;
 }
 
-.presentBg img{
-    padding: 0;
-    max-height:31.25rem;
-}

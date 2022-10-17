@@ -11,11 +11,11 @@
     height: 2rem;
     overflow:hidden;
     transition: .5s all ease;
+    cursor: pointer;
 }
 
 .footer:hover{
     height: 14.5rem;
-    cursor: pointer;
     top: 14.5rem;
 }
 
