@@ -21,21 +21,17 @@ function App() {
           <div className='container'>
               <NavBar/>
               <Routes>
-                {/* Componente contenedor  de ItemListContainer, SectionUs y Category*/}
+                {/* Componente contenedor  de ItemListContainer, SectionUs*/}
                 <Route exact path='/' element={<Main/>}/>
-                {/* Componente contenedor  de ItemListContainer, SectionUs y Category*/}
+
                 <Route exact path='/category/:id' element={<ItemListContainer/>}/>
 
-                {/* Componente contenedor de detalle del producto*/}
                 <Route exact path='/item/:id' element={<ItemDetailContainer/>}/>
 
-                {/* Componente contenedor que muestra los productos seleccionados en el carrito*/}
                 <Route exact path='/cart' element={<Cart/>}/>
 
-                {/* Componente contenedor que muestra el formulario*/}
                 <Route exact path='/checkout' element={<Checkout/>}/>
 
-                {/* Componente de Página no encontrada*/}
                 <Route path='*' element={<Page404/>}/>
 
               </Routes> 
