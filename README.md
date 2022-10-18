@@ -7,7 +7,7 @@
 Wish-Him, es un página web desarrollada con el fin de crear un espacio de E-commerce dónde 
 se podrá encontrar regalos para el género masculino.
 
-En la página **principal/inicio** se podrá visualizar una presentación animada >componente "SectionUs", y más abajo se muestra todos los productos disponibles >componente "ItemListContainer".
+En la página **principal/inicio** se podrá visualizar una presentación animada ==componente "SectionUs"==, y más abajo se muestra todos los productos disponibles ==componente "ItemListContainer"== .
 
 Estos dos componentes mencionados estan contenidos en el componente "Main", que es el que esta "ruteado" en la interfaz principal ("/")
 
