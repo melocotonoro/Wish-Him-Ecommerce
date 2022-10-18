@@ -1,4 +1,4 @@
-# Tírulo: Wish-Him E-commerce de productos para él 
+# Wish-Him E-commerce de productos para él 
 
 
 ![alt Main](https://res.cloudinary.com/ds7jaqjll/image/upload/v1666134278/Wish-Him/presentacion-01_xk9oem.jpg)
@@ -7,31 +7,30 @@
 Wish-Him, es un página web desarrollada con el fin de crear un espacio de E-commerce dónde 
 se podrá encontrar regalos para el género masculino.
 
-En la página principal se podrá visualizar una sección que habla de nosotros (componente "SectionUs"), pero
-principalmente se muestra todos los productos disponibles (componente "ItemListContainer").
+En la página **principal/inicio** se podrá visualizar una presentación animada >componente "SectionUs", y más abajo se muestra todos los productos disponibles >componente "ItemListContainer".
 
 Estos dos componentes mencionados estan contenidos en el componente "Main", que es el que esta "ruteado" en la interfaz principal ("/")
 
-El componente "ItemListContainer" es donde se realiza "el llamado" para recibir un array de objetos que contiene los productos a mostrar y es el que aglomera al componente "ItemList", mismo que se encarga de generar el contexto donde se encontrará el componente "Item" (representado en la interfaz como los elementos "cards" de productos).
+El componente "ItemListContainer" es donde se realiza "el llamado" para recibir un array de objetos que contiene los productos a mostrar y es el que aglomera al componente "ItemList", mismo que se encarga de generar el contexto donde se encontrará el componente "Item" (representado en la interfaz como los elementos "cards" de cada producto).
 
-En el componente NavBar, podemos encontrar  a la sección Principal, que "linkea" a la página principal, "Ropa" y "Accesorios" que son las categorías de los productos (al linkear sobre cada sección nos muestra los productos por cada categoría)
+En el componente NavBar, podemos encontrar la sección Principal, que "linkea" a la página principal, sección "Ropa" y "Accesorios" que son las categorías de los productos (al clickear sobre cada sección nos muestra los productos filtrados por cada categoría)
 
-En el componente "ItemDetailContainer" se hace el "llamado" del array de productos y filtra uno de los objetos de los productos que se visualizará en el DOM através del componente "ItemDetail".
-
-
-Cada "card" de productos tiene un  componente tipo botón "Buttons" con la descripción -Ver Detalles-,que nos muestra de forma dinámica al componente  "ItemDetail", con descripcion, precio,fotografía y con el componente "ItemCount" que nos permitirá agregar al carrito (componente "CarWidget") el producto y la cantidad desea.
+En el componente "ItemDetailContainer" se hace el "llamado" del array de productos y filtra uno de los objetos de los productos que se visualizará en el DOM a través del componente "ItemDetail".
 
 
+Cada "card" de productos tiene un componente tipo botón "Buttons" con la descripción -Ver Detalles-,que nos muestra de forma dinámica al componente  "ItemDetail", con descripcion, precio,fotografía y con el componente "ItemCount" que nos permitirá agregar al carrito (componente "CarWidget") el producto y la cantidad desea.
 
 
 
 
 
-# Getting Started with Create React App
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
