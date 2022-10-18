@@ -1,6 +1,6 @@
 # Wish-Him E-commerce de productos para él 
 
-##Diseñado y crado por Melisa Oro
+## Diseñado y creado por Melisa Oro
 
 ![alt Main](https://res.cloudinary.com/ds7jaqjll/image/upload/v1666134278/Wish-Him/presentacion-01_xk9oem.jpg)
 
