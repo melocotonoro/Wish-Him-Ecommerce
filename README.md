@@ -20,7 +20,7 @@ En el *componente "ItemDetailContainer"* se hace el "llamado" del array de produ
 
 Cada "card" de productos tiene un *componente "Buttons"* con la descripción *Ver Detalles*,que al clickearlo nos muestra de forma dinámica los productos con su descripción, precio,fotografía y el *componente "ItemCount"*, que nos permitirá agregar al carrito (componente "CarWidget") el producto deseado (todo contenido en el *componente "ItemDetail"*) 
 
-##**Diseñado y crado por Melisa Oro**
+#**Diseñado y crado por Melisa Oro**
 
 
 ## Getting Started with Create React App
