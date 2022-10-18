@@ -1,8 +1,8 @@
 # Tírulo: Wish-Him E-commerce de productos para él 
 
-<center>
-![alt Main](https://res.cloudinary.com/ds7jaqjll/image/upload/v1664333333/Wish-Him/logo_zj6g8d.png)
-</center>
+
+![alt Main](https://res.cloudinary.com/ds7jaqjll/image/upload/v1666134278/Wish-Him/presentacion-01_xk9oem.jpg)
+
 
 Wish-Him, es un página web desarrollada con el fin de crear un espacio de E-commerce dónde 
 se podrá encontrar regalos para el género masculino.
