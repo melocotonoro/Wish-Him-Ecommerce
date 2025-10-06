@@ -2,8 +2,6 @@
 
 ## Diseñado y creado por Melisa Oro
 
-## Link Correcto: https://melocotonoro.github.io/
-
 ![alt Main](https://res.cloudinary.com/ds7jaqjll/image/upload/v1666134278/Wish-Him/presentacion-01_xk9oem.jpg)
 
 
