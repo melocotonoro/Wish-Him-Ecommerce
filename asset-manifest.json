@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Wish-Him-Ecommerce/static/css/main.997ff4ad.css",
+    "main.js": "/Wish-Him-Ecommerce/static/js/main.c6c70b06.js",
+    "index.html": "/Wish-Him-Ecommerce/index.html",
+    "main.997ff4ad.css.map": "/Wish-Him-Ecommerce/static/css/main.997ff4ad.css.map",
+    "main.c6c70b06.js.map": "/Wish-Him-Ecommerce/static/js/main.c6c70b06.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.997ff4ad.css",
+    "static/js/main.c6c70b06.js"
+  ]
+}
