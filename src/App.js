@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './component/navBar/NavBar';
 import ItemDetailContainer from './component/ItemDetailContainer/ItemDetailContainer';
 import Main from './component/Main/Main';
@@ -17,7 +17,7 @@ function App() {
   return (
 
       <Context>
-        <BrowserRouter>
+        <HashRouter>
           <div className='container'>
               <NavBar/>
               <Routes>
@@ -38,7 +38,7 @@ function App() {
               <Footer/>
           </div>
         
-        </BrowserRouter>
+        </HashRouter>
       </Context>
   );
 }
